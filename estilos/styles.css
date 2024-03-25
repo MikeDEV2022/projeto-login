@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #5F2C82;
+}
+.container-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 515px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+    display: flex;
+    flex-direction: column;
+}
+.container-login h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.container-login p{
+    font-size: 0.8em;
+}
+.image-container{
+    height: 200px;
+    background-image: url(../imagens/metal.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.container-form{
+    padding: 10px;
+}
+.input-local{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: #5F2C82;
+    border: 2px solid #5F2C82;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+}
+.input-local i{
+    width: 40px;
+    padding-left: 13px;
+    font-size: 1.3em;
+    color: white;
+}
+.input-local > input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 6px;
+    width: 100%;
+    height: 98%;
+}
+.btn-enter{
+    display: flex;
+    flex-direction: column;
+}
+.btn-enter input{
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #53aaa7;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sub{
+    font-weight: bold;
+}
+#sub:hover{
+    background-color: #2d6462;
+}
+#forgotten{
+    background: none;
+    color: #2d6462;;
+    border: 1px solid #53aaa7;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 5px;
+    height: 40px;
+}
+#forgotten:hover{
+    background-color: #6cd3cf;
+}
+#forgotten > i{
+    font-size: 12px;
+    margin-left: 4px;
+    position: relative;
+    bottom: 2px;
+}
